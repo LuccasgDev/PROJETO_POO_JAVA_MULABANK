@@ -2,18 +2,19 @@ package ContasBancarias;
 
 public class Conta {
 
-      private Double saldo;
-      private String numeroConta;
-//    private Integer qtdContasCadastradas = 0;
-//    private static final Integer qtdContasMinimas = 5;
+    private Double saldo;
+    private String numeroConta;
 
-    Conta(){
-
+    Conta() {
     }
-    Conta(Double saldo, String numeroConta){
+
+    Conta(Double saldo, String numeroConta) {
         this.saldo = saldo;
         this.numeroConta = numeroConta;
+    }
 
+    Conta(int numeroConta) {
+        this.numeroConta = String.valueOf(numeroConta);
     }
 
     public String getNumeroConta() {
